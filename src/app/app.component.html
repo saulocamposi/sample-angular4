@@ -1,16 +1,20 @@
 <div class="container">
-  <app-form-schedule></app-form-schedule>
-  <app-details-schedule></app-details-schedule>
-
-
-
-
   <div class="well">
     App Component
   </div>
-
+<form class="form-group">
   <h1>
     {{title}}
   </h1>
-  <input type="text" name="name" value=""  [(ngModel)]="title">
+  <input type="text" name="name" value=""  [(ngModel)]="title" class="form-control">
+</form>
+
+
+  <app-list-schedule></app-list-schedule>
+  <app-detail-schedule></app-detail-schedule>
+
+
+
+
+
 </div>
