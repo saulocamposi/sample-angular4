@@ -5,13 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { FormScheduleComponent } from './form-schedule/form-schedule.component';
-import { DetailsScheduleComponent } from './details-schedule/details-schedule.component';
+import { DetailScheduleComponent } from './detail-schedule/detail-schedule.component';
+import { ListScheduleComponent } from './list-schedule/list-schedule.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormScheduleComponent,
-    DetailsScheduleComponent
+    DetailScheduleComponent,
+    ListScheduleComponent
   ],
   imports: [
     BrowserModule,
