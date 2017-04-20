@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { FormScheduleComponent } from './form-schedule/form-schedule.component';
+import { DetailsScheduleComponent } from './details-schedule/details-schedule.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormScheduleComponent,
+    DetailsScheduleComponent
   ],
   imports: [
     BrowserModule,
