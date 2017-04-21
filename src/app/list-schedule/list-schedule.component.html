@@ -1,0 +1,10 @@
+<div class="well">
+  Schedule List
+</div>
+
+<ul class="list-group">
+<li *ngFor="let schedule of schedules" class="list-group-item">{{schedule.name}}</li>
+</ul>
+
+
+<app-form-schedule (notify)="onNotifyClicked($event)"></app-form-schedule>
