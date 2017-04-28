@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { FormScheduleComponent } from './form-schedule/form-schedule.component';
 import { DetailScheduleComponent } from './detail-schedule/detail-schedule.component';
 import { ListScheduleComponent } from './list-schedule/list-schedule.component';
+import { CounterComponent } from './counter/counter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormScheduleComponent,
     DetailScheduleComponent,
-    ListScheduleComponent
+    ListScheduleComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,
