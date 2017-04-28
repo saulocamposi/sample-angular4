@@ -2,19 +2,13 @@
   <div class="well">
     App Component
   </div>
-<form class="form-group">
-  <h1>
-    {{title}}
-  </h1>
-  <input type="text" name="name" value=""  [(ngModel)]="title" class="form-control">
-</form>
-
+  <form class="form-group">
+    <h1>{{title}}</h1>
+    <input type="text" name="name" value="" [(ngModel)]="title" class="form-control">
+  </form>
 
   <app-list-schedule></app-list-schedule>
   <app-detail-schedule></app-detail-schedule>
-
-
-
-
+  <app-counter [counter]="0"></app-counter>
 
 </div>
