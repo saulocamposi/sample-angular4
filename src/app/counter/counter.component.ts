@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input,Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
@@ -10,7 +10,7 @@ export class CounterComponent implements OnInit {
   @Input() counter : number = 0;
   initialvalue : number = 10;
 
-  valuechanged = new EventEmitter();
+  @Output() valuechanged = new EventEmitter();
 
   constructor() { }
 
@@ -20,10 +20,16 @@ export class CounterComponent implements OnInit {
   increment(){
     this.counter++;
     this.valuechanged.emit('Value Changed');
+
   }
 
-  decrement(){
+  decrement(event){
     this.counter--;
+    console.log(event);
+  }
+
+  onChangeValue(event){
+
   }
 
 }
