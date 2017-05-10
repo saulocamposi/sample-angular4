@@ -13,4 +13,8 @@ export class DetailScheduleComponent implements OnInit {
   ngOnInit() {
   }
 
+  onChangeValue(f) : void{
+    console.log(f);
+  }
+
 }
