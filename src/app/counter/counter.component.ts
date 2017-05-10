@@ -8,7 +8,7 @@ import { Component, OnInit, Input,Output, EventEmitter } from '@angular/core';
 export class CounterComponent implements OnInit {
 
   @Input() counter : number = 0;
-  initialvalue : number = 10;
+  initialvalue = 10;
 
   @Output() valuechanged = new EventEmitter();
 
@@ -19,17 +19,21 @@ export class CounterComponent implements OnInit {
 
   increment(){
     this.counter++;
-    this.valuechanged.emit('Value Changed');
-
+    this.valuechanged.emit({counter: this.counter });
+    console.log("Increment");
   }
 
-  decrement(event){
+  decrement(){
     this.counter--;
-    console.log(event);
+    this.valuechanged.emit({counter: this.counter });
+    console.log("Decrement");
   }
 
-  onChangeValue(event){
-
+  onChangeValue(f) : void{
+    console.log(f);
   }
+
+
+
 
 }
